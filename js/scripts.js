@@ -162,10 +162,7 @@
             // handle the invalid form...
             rformError();
             rsubmitMSG(false, "Por favor revise los campos obligatorios!");
-        } else {
-            event.preventDefault();
-            $("#requestForm").submit();
-        }
+        } 
     });
 
     function rsubmitForm() {
