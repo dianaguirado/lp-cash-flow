@@ -893,95 +893,13 @@ input[type='checkbox'] {
 /**********************************/
 .lightbox-basic {
 	margin: 2.5rem auto;
-	padding: 2rem 1.5rem 2rem 1.5rem;
 	border-radius: 0.25rem;
 	background: #fff;
 	text-align: left;
+	width: 90vw;
+	max-width: 70rem;
+	height: 85vh;
 }
-
-.lightbox-basic .container {
-	padding-right: 0;
-	padding-left: 0;
-}
-
-.lightbox-basic .image-container {
-	max-width: 33.75rem;
-	margin-right: auto;
-	margin-bottom: 3rem;
-	margin-left: auto;
-}
-
-.lightbox-basic h3 {
-	margin-bottom: 0.5rem;
-}
-
-.lightbox-basic hr {
-	width: 2.5rem;
-	height: 0.125rem;
-	margin-top: 0;
-	margin-bottom: 1.25rem;
-	margin-left: 0;
-	border: 0;
-	background-color: var(--main-color);
-	text-align: left;
-}
-
-.lightbox-basic h4 {
-	margin-bottom: 1rem;
-}
-
-.lightbox-basic .list-unstyled .fas {
-	color: var(--main-color);
-	line-height: 1.375rem;
-}
-
-.lightbox-basic .list-unstyled .media-body {
-	margin-left: 0.625rem;
-}
-
-.lightbox-basic .btn-outline-reg,
-.lightbox-basic .btn-solid-reg {
-	margin-top: 0.75rem;
-}
-
-/* Signup Button */
-.lightbox-basic .btn-solid-reg.mfp-close {
-	position: relative;
-	width: auto;
-	height: auto;
-	color: #fff;
-	opacity: 1;
-}
-
-.lightbox-basic .btn-solid-reg.mfp-close:hover {
-	color: var(--main-color);
-}
-/* end of signup Button */
-
-/* Back Button */
-.lightbox-basic a.mfp-close.as-button {
-	position: relative;
-	width: auto;
-	height: auto;
-	margin-left: 0.375rem;
-	color: var(--main-color);
-	opacity: 1;
-}
-
-.lightbox-basic a.mfp-close.as-button:hover {
-	color: #fff;
-}
-/* end of back button */
-
-.lightbox-basic button.mfp-close.x-button {
-	position: absolute;
-	top: -0.125rem;
-	right: -0.125rem;
-	width: 2.75rem;
-	height: 2.75rem;
-	color: #707984;
-}
-
 
 /***********************/
 /*     10. Pricing     */
@@ -998,7 +916,7 @@ input[type='checkbox'] {
 
 .cards-2 .card {
 	display: block;
-	max-width: 19.5rem;
+	max-width: 100%;
 	margin-right: auto;
 	margin-bottom: 6rem;
 	margin-left: auto;
@@ -1081,6 +999,12 @@ input[type='checkbox'] {
 
 .cards-2 .card .list-unstyled .media-body {
 	margin-left: 0.625rem;
+}
+
+.cards-2 .card .list-unstyled {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
 }
 
 .cards-2 .card .button-wrapper {
@@ -1620,7 +1544,7 @@ a:hover.back-to-top {
 /*****************************/	
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 85%;
@@ -1729,6 +1653,12 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 	/* end of extra pages */
+
+	/* Pricing */
+	.cards-2 .card .list-unstyled {
+		flex-direction: column;
+	}
+	/* end of Pricing*/
 }
 /* end of min-width width 768px */
 
@@ -1901,13 +1831,6 @@ a:hover.back-to-top {
 	}
 	/* end of details 2 */
 
-
-	/* Details Lightboxes */
-	.lightbox-basic {
-		max-width: 62.5rem;
-		padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-	}
-
 	.lightbox-basic .image-container {
 		max-width: 100%;
 		margin-right: 2rem;
@@ -1924,10 +1847,13 @@ a:hover.back-to-top {
 	/* Pricing */
 	.cards-2 .card {
 		display: inline-block;
-		width: 17.125rem;
+		width: 100%;
 		max-width: 100%;
 		margin-right: 1rem;
 		margin-left: 1rem;
+	}
+	.cards-2 .card .list-unstyled {
+		flex-direction: row;
 	}
 	/* end of pricing */
 
@@ -2088,9 +2014,12 @@ a:hover.back-to-top {
 
 	/* Pricing */
 	.cards-2 .card {
-		width: 19.5rem;
+		width: 100%;
 		margin-right: 1.625rem;
 		margin-left: 1.625rem;
+	}
+	.cards-2 .card .list-unstyled {
+		flex-direction: row;
 	}
 	/* end of pricing */
 
