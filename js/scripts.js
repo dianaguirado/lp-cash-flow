@@ -161,11 +161,9 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             rformError();
-            rsubmitMSG(false, "Please fill all fields!");
+            rsubmitMSG(false, "Por favor revise los campos obligatorios!");
         } else {
-            // everything looks good!
-            event.preventDefault();
-            rsubmitForm();
+            $("#requestForm").submit();
         }
     });
 
