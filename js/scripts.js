@@ -163,6 +163,7 @@
             rformError();
             rsubmitMSG(false, "Por favor revise los campos obligatorios!");
         } else {
+            event.preventDefault();
             $("#requestForm").submit();
         }
     });
