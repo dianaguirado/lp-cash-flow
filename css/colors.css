@@ -4,4 +4,6 @@
     --border-color: #c4d8dc;
     --headers-color: #393939;
     --text-color: #626262;
+    --text-error: orange;
+    --popup-bg-color: #f9fafc;
   }
