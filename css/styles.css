@@ -125,6 +125,15 @@ a.white {
   color: #fff;
 }
 
+.list-unstyled .media-body {
+  margin-left: 0.625rem;
+}
+
+.list-unstyled .fas {
+  color: var(--main-color);
+  line-height: 1.375rem;
+}
+
 .testimonial-text {
   font: italic 400 1rem/1.5rem "Raleway", sans-serif;
 }
@@ -903,15 +912,6 @@ input[type="checkbox"] {
 
 .basic-2 h2 {
   margin-bottom: 1.375rem;
-}
-
-.basic-2 .list-unstyled .fas {
-  color: var(--main-color);
-  line-height: 1.375rem;
-}
-
-.basic-2 .list-unstyled .media-body {
-  margin-left: 0.625rem;
 }
 
 .basic-2 .btn-solid-reg {
